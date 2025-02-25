@@ -18,13 +18,9 @@ public partial class DistanceChekerAction : Action
         Debug.Log(distance);
         
         if(distance <= Value.Value)
-        {
             return Status.Success;
-        }
         else
-        {
             return Status.Running;
-        }
     }
 }
 
