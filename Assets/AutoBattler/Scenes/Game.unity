@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 487281353}
   - component: {fileID: 487281352}
   - component: {fileID: 487281354}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Mannequin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487281347}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d834c218515f9fe45923ba0acc5bc4fd, type: 3}
   m_Name: 
@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 734058607}
   - component: {fileID: 734058606}
   - component: {fileID: 734058605}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Mannequin_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734058604}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d834c218515f9fe45923ba0acc5bc4fd, type: 3}
   m_Name: 
@@ -3896,6 +3896,12 @@ MonoBehaviour:
   - {fileID: 840029119}
   - {fileID: 1677202947}
   - {fileID: 374253543}
+--- !u!95 &1386410085 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 81bb9eea30387e442899949a80011e55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1386410072}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1402834355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8218712588957474231, guid: 81bb9eea30387e442899949a80011e55,
@@ -4248,6 +4254,8 @@ GameObject:
   - component: {fileID: 1872064859}
   - component: {fileID: 1872064858}
   - component: {fileID: 1872064857}
+  - component: {fileID: 1872064862}
+  - component: {fileID: 1872064863}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4278,7 +4286,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872064855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f09c3b98f9d0c548a5cd5728bd2ea5e, type: 3}
   m_Name: 
@@ -4293,7 +4301,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872064855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f1e62393a46504428e464bdfaa357b0, type: 3}
   m_Name: 
@@ -4307,7 +4315,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872064855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d834c218515f9fe45923ba0acc5bc4fd, type: 3}
   m_Name: 
@@ -4365,6 +4373,91 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 3
+--- !u!114 &1872064862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872064855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: -1040292870443209693, guid: 5f269401cd4217b46807c8702c4dc7ae,
+    type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 8275069108496105764
+  - rid: 8275069108496106011
+  - rid: 8275069108496106012
+  - rid: 8275069108496106093
+  - rid: 8275069108496106234
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 8275069108496105764
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 1872064855}
+    - rid: 8275069108496106011
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 13865711712631431537
+          m_Value1: 4025783671656963689
+        Name: FightTarget
+        m_Value: {fileID: 487281347}
+    - rid: 8275069108496106012
+      type: {class: 'BlackboardVariable`1[[AutoBattler.Scripts.AI.TargetsContainer, CodeBase]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9303853355897460905
+          m_Value1: 1391366480558341737
+        Name: FightTargetsContainer
+        m_Value: {fileID: 1872064863}
+    - rid: 8275069108496106093
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Animator, UnityEngine.AnimationModule]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 17525072878354709289
+          m_Value1: 5388161475989969310
+        Name: Animator
+        m_Value: {fileID: 1386410085}
+    - rid: 8275069108496106234
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 13902529677752966863
+          m_Value1: 17912537565892509509
+        Name: StopDistance
+        m_Value: 3
+--- !u!114 &1872064863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872064855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b9e73f071954a499fb4f34cc48740f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Targets:
+  - {fileID: 487281347}
+  - {fileID: 734058604}
 --- !u!4 &1883195859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3787256744503370023, guid: 81bb9eea30387e442899949a80011e55,
