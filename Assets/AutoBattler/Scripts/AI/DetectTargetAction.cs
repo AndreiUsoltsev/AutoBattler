@@ -23,7 +23,6 @@ namespace AutoBattler.Scripts.AI
         protected override Status OnUpdate()
         {
             Transform target = Sensor.Value.GetClosestTarget(Tag);
-            Debug.Log(target, target);
             if (target == null)
                 return Status.Running;
             
