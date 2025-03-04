@@ -28,7 +28,6 @@ namespace AutoBattler.Scripts.AI
 
         public Transform GetClosestTarget(string otherTag)
         {
-            Debug.Log($"GetClosestTarget: {otherTag} {_detectedTargets.Count}");
             if (_detectedTargets.Count == 0)
                 return null;
 
