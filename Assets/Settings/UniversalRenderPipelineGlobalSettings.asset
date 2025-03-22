@@ -54,7 +54,7 @@ MonoBehaviour:
       - rid: 505799134953865234
       - rid: 505799134953865235
       - rid: 505799134953865236
-      - rid: 5034930343928922113
+      - rid: 5034930041950830592
     m_RuntimeSettings:
       m_List: []
   m_AssetVersion: 8
@@ -338,7 +338,7 @@ MonoBehaviour:
         m_ExportShaderVariants: 1
         m_ShaderVariantLogLevel: 0
         m_StripRuntimeDebugShaders: 1
-    - rid: 5034930343928922113
+    - rid: 5034930041950830592
       type: {class: UniversalRenderPipelineEditorAssets, ns: UnityEngine.Rendering.Universal,
         asm: Unity.RenderPipelines.Universal.Runtime}
       data:
